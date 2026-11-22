@@ -52,8 +52,8 @@ setup(' Profile-user authenticate', async ({ page, request }) => {
     // console.log('token = ', token);
 
     await page.goto('/auth/login')
-    await page.getByLabel('Email address *').fill(userData.email)
-    await page.getByPlaceholder('Your password').fill(userData.password)
+    await page.locator('#email').fill(userData.email)
+    await page.locator('#password').fill(userData.password)
     await page.locator('.btnSubmit').click()
     await expect(page).toHaveURL(/\/account/)
     //    console.log('1 st -> Profile  Login StorageState Setup is completed');
@@ -76,8 +76,8 @@ setup(' Password-user authenticate', async ({ page, request }) => {
     request_Body_Pwd = await user_api.createUser(userData_pwdTests)
 
     await page.goto('/auth/login')
-    await page.getByLabel('Email address *').fill(userData_pwdTests.email)
-    await page.getByPlaceholder('Your password').fill(userData_pwdTests.password)
+    await page.locator('#email').fill(userData_pwdTests.email)
+    await page.locator('#password').fill(userData_pwdTests.password)
     await page.locator('.btnSubmit').click()
     await expect(page).toHaveURL(/\/account/)
     //    console.log('2 nd -> Password  Login StorageState Setup is completed ');
