@@ -324,7 +324,7 @@ test.describe('Profile Page update', () => {
             await pom.home.profile_loc.click()
             await pom.profile.fill_PasswordChange(new_pwd_02, old_pwd_02, old_pwd_02)
 
-            //  await pom.profile.changePwd_Btn_click()
+            await pom.profile.changePwd_Btn_click()
 
             await expect(pom.profile.profile_pwd_Success_loc).toBeVisible()
             await pom.login.expect_LoggedOut()
