@@ -8,7 +8,9 @@
     "test:register": "npx playwright test tests/Register.spec.ts",
     "test:login": "npx playwright test tests/Login.spec.ts",
     "test:favorites": "npx playwright test tests/Favorites.spec.ts",
+    "test:forgot_password": "npx playwright test tests/Forgot_Password.spec.ts",
     "test:profile": "npx playwright test tests/Profile.spec.ts",
+    
     "test:headed": "npx playwright test --headed",
     "report": "npx playwright show-report",
     "allure:generate": "npx allure generate allure-results --clean",
