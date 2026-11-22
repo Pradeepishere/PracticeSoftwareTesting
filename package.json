@@ -1,0 +1,32 @@
+{
+  "name": "practice_testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:register": "npx playwright test tests/Register.spec.ts",
+    "test:login": "npx playwright test tests/Login.spec.ts",
+    "test:favorites": "npx playwright test tests/Favorites.spec.ts",
+    "test:profile": "npx playwright test tests/Profile.spec.ts",
+    "test:headed": "npx playwright test --headed",
+    "report": "npx playwright show-report",
+    "allure:generate": "npx allure generate allure-results --clean",
+    "allure:open": "npx allure open allure-report",
+    "allure:serve": "npx allure serve allure-results"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "@types/node": "^26.6.4",
+    "allure": "^3.33.0",
+    "allure-playwright": "^3.15.0"
+  },
+  "dependencies": {
+    "playwright": "^1.65.0",
+    "test": "^3.3.0"
+  }
+}
