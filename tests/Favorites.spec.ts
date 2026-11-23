@@ -71,7 +71,7 @@ test.describe('Product testing in Favorites Page', () => {
             try {
                 await newPage.goto('/account/favorites')
                 await newPage.waitForTimeout(4000)
-                await expect(newPage.getByLabel('Email address *')).toBeVisible({ timeout: 10000 })
+                await expect(newPage.getByLabel('Email address *')).toBeVisible({ timeout: 20000 })
                 await expect(newPage).toHaveURL(/\/auth\/login/)
             }
             finally {

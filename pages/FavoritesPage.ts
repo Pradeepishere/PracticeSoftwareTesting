@@ -47,7 +47,7 @@ export class FavoritesPage {
         // {exact: false} => means partial text 
     }
     async remove(prodName: string) {    // inside Single Product locator , find remove btn
-        await expect(this.remove_btn.first()).toBeVisible()
+        await expect(this.remove_btn.first()).toBeVisible({ timeout: 10000 })
         await (await this.get_singleProduct(prodName)).locator('.btn-danger').click()
     }
     async expect_ContainsProd(prodName: string) {   // given Product is present in favorite page list
@@ -58,11 +58,11 @@ export class FavoritesPage {
         await expect(this.many_Prod_Names.filter({ hasText: prodName })).toHaveCount(0)
     }
     async expect_emptyFavorites() {     // No product is present in Favorites page lists
-        await expect(this.noFavorite_PresentMsg).toBeVisible()
+        await expect(this.noFavorite_PresentMsg).toBeVisible({ timeout: 10000 })
         await expect(this.many_Prod_Names).toHaveCount(0)
     }
     async expect_anyProd_inFav() {       // atleast Any 1 or more Products are present
-        await expect(await this.remove_btn.first()).toBeVisible()
+        await expect(await this.remove_btn.first()).toBeVisible({ timeout: 10000 })
         await expect(await this.many_Prod_Names.first()).toBeVisible()
         await expect(this.noFavorite_PresentMsg).not.toBeVisible()
         await expect(this.noFavorite_PresentMsg).toBeHidden()

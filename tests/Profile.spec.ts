@@ -158,6 +158,7 @@ test.describe('Profile Page update', () => {
         })
     })
 
+
     // EP: mandatory + invalid values
     test.describe('Profile Validation', () => {
 
@@ -210,6 +211,7 @@ test.describe('Profile Page update', () => {
             }
         })
     })
+
     //      Password reset (change password)
 
     test.describe('Profile Password change, Reset tests', () => {
@@ -278,6 +280,7 @@ test.describe('Profile Page update', () => {
             }
         })
     })
+
     test.describe('Change password - valid + state transition', async () => {
 
         test.describe.configure({ mode: 'serial' })
