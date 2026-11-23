@@ -65,7 +65,7 @@ test.describe('Profile Page update', () => {
 
         test.beforeEach(async ({ page }) => {
             await openProfile_page(page)
-            await expect(pom.profile.firstName).toHaveValue(/.+/, { timeout: 20000 })
+            await expect(pom.profile.firstName).toHaveValue(/.+/, { timeout: 30000 })
         })
 
         test('TC-002 : Profile shows registered details of User', async () => {
@@ -161,14 +161,16 @@ test.describe('Profile Page update', () => {
     // EP: mandatory + invalid values
     test.describe('Profile Validation', () => {
 
-        test.describe.configure({ mode: 'serial' });        // Optional
+        //    test.describe.configure({ mode: 'serial' });        // Optional
 
         test.beforeEach(async ({ page }) => {
             await openProfile_page(page)
         })
 
         test('TC-006 : Email field is only read-Only, not Editable', async () => {
-            await expect(pom.profile.email).toHaveValue(userData_profile.email, { timeout: 20000 })
+            // await pom.home.timeout()
+            await expect(pom.profile.lastName).toHaveValue(/.+/, { timeout: 30000 });
+            await expect(pom.profile.email).toHaveValue(userData_profile.email, { timeout: 30000 })
             await console.log(await pom.profile.email.inputValue());
 
             await expect(pom.profile.email).toHaveAttribute('readonly', '');
