@@ -110,7 +110,7 @@ test.describe('Product testing in Favorites Page', () => {
             await pom.login.expect_LoggedIn();
         });
 
-        test('TC-03 Fav : Add 1 product in Empty Fav. list -> appears in Favorites list page', async () => {
+        test('TC-03 Fav : Add 1 product in Empty Fav. list -> appears in Favorites list page @Regression', async () => {
 
             await pom.favorites.goto_favorites()
             await pom.favorites.expect_emptyFavorites()

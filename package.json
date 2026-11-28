@@ -10,6 +10,9 @@
     "test:favorites": "npx playwright test tests/Favorites.spec.ts",
     "test:forgot_password": "npx playwright test tests/Forgot_Password.spec.ts",
     "test:profile": "npx playwright test tests/Profile.spec.ts",
+
+    "regression": "npx playwright test --grep @Regression",
+    
     
     "test:headed": "npx playwright test --headed",
     "report": "npx playwright show-report",

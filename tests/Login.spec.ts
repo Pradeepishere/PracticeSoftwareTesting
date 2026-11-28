@@ -50,7 +50,7 @@ test.describe('Login Page', () => {
             console.log('All login form Elements are displayed');
 
         })
-        test('TC-Login-002 : User logs in with Valid Credentials', async ({ page }) => {
+        test('TC-Login-002 : User logs in with Valid Credentials @Regression', async ({ page }) => {
             await expect(page).toHaveURL(/\/auth\/login/)
             console.log('Password : ', userdata.password);
 
@@ -82,7 +82,7 @@ test.describe('Login Page', () => {
             console.log('Error msg : ' + await pom.login.login_error_msg.textContent());
         })
         test('TC-003 : Empty login email & Password shows Required errors', async () => {
-           // await expect(pom.login.login_btn).toBeVisible()
+            // await expect(pom.login.login_btn).toBeVisible()
             await pom.login.login_btn.click()
             await expect(pom.login.email_error).toBeVisible()
             await expect(pom.login.password_req).toBeVisible()
@@ -105,7 +105,7 @@ test.describe('Login Page', () => {
             await pom.login.expect_LoggedIn()
         })
         test('TC-007 : login -> my Account page -> logOut returns to -> login Page', async ({ page }) => {
-          //  await expect(page).toHaveURL(/\/auth\/login/)
+            //  await expect(page).toHaveURL(/\/auth\/login/)
             await pom.login.login_cred(user_email, userdata.password)
             await pom.login.expect_LoggedIn()
             await pom.login.logOut()
@@ -116,7 +116,7 @@ test.describe('Login Page', () => {
             await expect(page).toHaveURL(/\/auth\/login/)
         })
         test('TC-009 : Session persists after page reload', async ({ page }) => {
-           // await expect(page).toHaveURL(/\/auth\/login/)
+            // await expect(page).toHaveURL(/\/auth\/login/)
             await pom.login.login_cred(user_email, userdata.password)
             await pom.login.expect_LoggedIn()
             await page.reload()

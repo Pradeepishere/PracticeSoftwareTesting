@@ -58,20 +58,20 @@ test.describe('Forgot Password Page', () => {
             await pom.forgot_pwd.password_Reset('      ')
             await pom.forgot_pwd.expect_blank_Email_error()
         })
-        test('TC-004 : Registered email -> Reset Success', async () => {
+    })
+    test('TC-004 : Registered email -> Reset Success @Regression', async () => {
 
-            apiContext = await request.newContext()
-            await new UserApi(apiContext).createUser(userdata)
+        apiContext = await request.newContext()
+        await new UserApi(apiContext).createUser(userdata)
 
-            await pom.forgot_pwd.password_Reset(userdata.email)
-            await pom.forgot_pwd.expect_pwd_Reset_Success()
+        await pom.forgot_pwd.goto_forgot_pwd()
+        await pom.forgot_pwd.password_Reset(userdata.email)
+        await pom.forgot_pwd.expect_pwd_Reset_Success()
 
-            await apiContext.dispose()
+        await apiContext.dispose()
 
-            //  in this website , registered email is deleted automatically, 
-            // thats why we need to register again before proceed to any email relateed code
-        })
-
+        //  in this website , registered email is deleted automatically, 
+        // thats why we need to register again before proceed to any email relateed code
     })
 
 

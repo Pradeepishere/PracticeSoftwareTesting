@@ -22,7 +22,7 @@ test.describe('Register - Customer Account Creation', () => {   // 1st Decribe
 
         test.describe.configure({ mode: 'serial' });        // Optional
 
-        test('TC-Reg-001 : Customer Register with Valid data', async ({ page }) => {
+        test('TC-Reg-001 : Customer Register with Valid data @Regression', async ({ page }) => {
 
             await console.log('Unique Email : ', userEmail);
 

@@ -2,10 +2,10 @@
   "cookies": [
     {
       "name": "cf_clearance",
-      "value": "Cou6wWosGB0O_V5-I46IO2sUl6K8ZgXTIog6XgeTRQyous5WGeyKXs24EUZ6bBOD-yWEz2t1bB3i-NB45gL2X-HPSrpCndp8nvFY0ko7xP2jf7h0IqGssG9Na_0pxoiTPTI5QNmPT3sFER00XnnCmiVeAqN7fjFO0jEXUuqW9FqsO409XqiFWAH9aDvA1iAywKrSUQR7eWLTp8-BS1qYdV0cqDaeGb4mwcra1DT5oNEVhHp3uJVT9nXr-GO0q8JWWT5X0bf4TRF_NQwQWJja8kcY9_v1Hut-7jEUbDbU7smkSe3xjMTchn0Ub1KDCoX2F7vQmM-9Pgb0vGWoh_Kt-59YqeN2CnXQ9ACZNEQEhuhaaNDj922Ms8VJFVe_UOa8_NJozisyog_iEkyTdDuw4bPqeSQPvQud9E8tVudvQg1WsZcpDl5Twr5f",
+      "value": "ChPVujXdNr2CC_TAQ531pC9mdvZ0NLr4uMtlAmOYl4BEl6Gl-CEQSKZ__FIuUhivxN6WwmOZkT2LpqO8pz2rPT92LzCMsN3ustIFvow3PY9x5s9ARabAMbUehF1ZOLnFsj7INbcM0oTyVedCzlLZZcRTz623ekOvLq2VZdHQHwP1pctcvFtzgNq0FlEeXlnUVSfM7AJPJebx09JNekp6gvxDYHCwSImoY0rPLRWCxcLCnUPrtiRQnk_Y6KrtklvyAZkSA7ywc3IlaNfwoIwgZ0Jnh-0R9SFZnjJx_SxzqoYkJgyXmObdelYnT3JfQ7wA-BwM5uySBBuc_9DdLEAd08jNbU_9Bye3_rdVr0cPfmWXj49vgKZiBng925b0lqHBEuC7aFUJzU5M2xk",
       "domain": ".practicesoftwaretesting.com",
       "path": "/",
-      "expires": 1826990428.983233,
+      "expires": 1827386597.448409,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None",
@@ -19,7 +19,7 @@
       "localStorage": [
         {
           "name": "auth-token",
-          "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2FwaS5wcmFjdGljZXNvZnR3YXJldGVzdGluZy5jb20vdXNlcnMvbG9naW4iLCJpYXQiOjE3OTU0NTQ0MzMsImV4cCI6MTc5NTQ1NDczMywibmJmIjoxNzk1NDU0NDMzLCJqdGkiOiJsUVZNckZWNlJoVXRubDBVIiwic3ViIjoiMDFtODRwcmh3N2R4NW0xZHhqcDQyMjljajQiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3Iiwicm9sZSI6InVzZXIifQ.bl8kZGnldPTk2jlx9-RsNx6xNFc2h82RJHJimccLjs0"
+          "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2FwaS5wcmFjdGljZXNvZnR3YXJldGVzdGluZy5jb20vdXNlcnMvbG9naW4iLCJpYXQiOjE3OTU4NTA2MDAsImV4cCI6MTc5NTg1MDkwMCwibmJmIjoxNzk1ODUwNjAwLCJqdGkiOiJ5ZEg0NWo3YkVuNE1qVzBpIiwic3ViIjoiMDFtOGdnanNmNHd3NG5zc2h2ZnZiZzdiMHoiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3Iiwicm9sZSI6InVzZXIifQ.AYU-73y1bo3RAQOQrGbM_5nL0vywJm7ocWTJIjmXv6M"
         }
       ]
     }

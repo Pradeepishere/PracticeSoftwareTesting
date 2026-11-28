@@ -85,7 +85,7 @@ test.describe('Profile Page update', () => {
             await console.log('TC-002 : Succesfully tested');
         })
 
-        test('TC-003 : Update each field -> reLoad page -> all fields are updated', async ({ page }) => {
+        test('TC-003 : Update each field -> reLoad page -> all fields are updated @Regression', async ({ page }) => {
             await console.log(userData_profile.first_name);
             await expect(pom.profile.firstName).toHaveValue(userData_profile.first_name)
 
@@ -294,7 +294,7 @@ test.describe('Profile Page update', () => {
             old_pwd_02 = userData_pwdTests.password;
         });
 
-        test('TC-013 : Valid Password accepted & user is logged out', async ({ page }) => {
+        test('TC-013 : Valid Password accepted & user is logged out @Regression', async ({ page }) => {
 
             await openProfile_page(page)  // login once with original credentials,
             //  then credentials are changed for testing
